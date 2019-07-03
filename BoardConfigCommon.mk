@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
--include vendor/motorola/msm8953-common/BoardConfigVendor.mk
+-include vendor/motorola/msm8937-common/BoardConfigVendor.mk
 
-PLATFORM_PATH := device/motorola/msm8953-common
+PLATFORM_PATH := device/motorola/msm8937-common
 
 TARGET_SPECIFIC_HEADER_PATH := $(PLATFORM_PATH)/include
 
@@ -28,11 +28,11 @@ WITH_LINEAGE_CHARGER := false
 TARGET_FS_CONFIG_GEN := $(PLATFORM_PATH)/config.fs
 
 # Platform
-TARGET_BOARD_PLATFORM := msm8953
+TARGET_BOARD_PLATFORM := msm8937
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno308
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := MSM8953
+TARGET_BOOTLOADER_BOARD_NAME := MSM8937
 TARGET_NO_BOOTLOADER := true
 
 # Architecture
@@ -65,8 +65,8 @@ USE_DEVICE_SPECIFIC_GPS := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := $(TARGET_BOARD_PLATFORM)
 
 # Init
-TARGET_INIT_VENDOR_LIB := libinit_msm8953-common
-TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8953-common
+TARGET_INIT_VENDOR_LIB := libinit_msm8937-common
+TARGET_RECOVERY_DEVICE_MODULES := libinit_msm8937-common
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237

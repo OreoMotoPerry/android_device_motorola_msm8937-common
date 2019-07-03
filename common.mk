@@ -17,10 +17,10 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 # Proprietary
-$(call inherit-product, vendor/motorola/msm8953-common/msm8953-common-vendor.mk)
+$(call inherit-product, vendor/motorola/msm8937-common/msm8937-common-vendor.mk)
 
 # Build Props
-$(call inherit-product, device/motorola/msm8953-common/system_prop.mk)
+$(call inherit-product, device/motorola/msm8937-common/system_prop.mk)
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
@@ -69,7 +69,7 @@ PRODUCT_AAPT_CONFIG := normal
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio.primary.msm8953 \
+    audio.primary.msm8937 \
     audio.a2dp.default \
     audio.usb.default \
     audio.r_submix.default \
@@ -130,8 +130,8 @@ PRODUCT_COPY_FILES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    copybit.msm8953 \
-    gralloc.msm8953 \
+    copybit.msm8937 \
+    gralloc.msm8937 \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.1-impl \
@@ -140,8 +140,8 @@ PRODUCT_PACKAGES += \
     android.hardware.memtrack@1.0-impl \
     android.hardware.memtrack@1.0-service \
     android.hardware.configstore@1.0-service \
-    hwcomposer.msm8953 \
-    memtrack.msm8953 \
+    hwcomposer.msm8937 \
+    memtrack.msm8937 \
     libgenlock \
     libtinyxml \
     libdisplayconfig \
@@ -172,7 +172,7 @@ PRODUCT_PACKAGES += \
 # Fingerprint
 PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service_32 \
-    fingerprint.msm8953
+    fingerprint.msm8937
 
 # FM
 PRODUCT_PACKAGES += \
@@ -227,7 +227,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-impl \
     android.hardware.light@2.0-service \
-    lights.msm8953
+    lights.msm8937
 
 # Display Calibration
 PRODUCT_PACKAGES += \
@@ -267,7 +267,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libnfc \
     libnfc_jni \
-    nfc_nci.msm8953 \
+    nfc_nci.msm8937 \
     NfcNci \
     Tag \
     com.android.nfc_extras \
